@@ -1,6 +1,6 @@
 import Head from "next/head";
 import ContactForm from "../components/ContactForm";
-import supabase from "../api/supabase";
+import supabase from "./api/supabase";
 import { useEffect, useState } from "react";
 
 export default function Home() {

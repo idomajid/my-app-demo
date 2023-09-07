@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { faker } from "@faker-js/faker";
 
-import supabase from "../../api/supabase";
+import supabase from "../api/supabase";
 
 export default function index() {
   const [findUID, setFindUID] = useState("");
@@ -40,7 +40,7 @@ export default function index() {
   // console.log({ entrancePerson });
 
   return (
-    <div>
+    <div className="flex justify-center items-center h-64 bg-red-100 ">
       <form onSubmit={updateData}>
         <label> UID</label>
         <input
